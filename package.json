@@ -1,0 +1,20 @@
+{
+  "name": "playwright-recette-saucedemo",
+  "version": "1.0.0",
+  "description": "Projet d'entraînement à l'automatisation des tests avec Playwright : recette d'un site e-commerce de démonstration et tests d'API.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --project=chromium --project=firefox --project=mobile-chrome",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --ui",
+    "rapport": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
